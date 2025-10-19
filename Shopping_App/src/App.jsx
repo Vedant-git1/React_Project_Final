@@ -1,40 +1,20 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-import { AppProvider } from './context/AppContext';
-import CartValue from './components/CartValue';
-import ExpenseList from './components/ExpenseList';
-import ItemSelected from './components/ItemSelected';
-import Location from './components/Location';
+import LandingPage from './pages/LandingPage';
+import ProductListing from './pages/ProductListing';
+import ShoppingCart from './pages/ShoppingCart';
 
 const App = () => {
     return (
-        <AppProvider>
-            <div className='container'>
-                <h1 className='mt-3'>Shopping App</h1>
-                <div className='row mt-3'> 
-                    <div className='col-sm'>
-                        <CartValue />
-                    </div>
-                    <div className='col-sm'>
-                        <Location />
-                    </div>
-                </div>
-                <h3 className='mt-3'>Shopping Cart</h3>
-                <div className='row '>
-                    <div className='col-sm'>
-                        <ExpenseList />
-                    </div>
-                </div>
-                <h3 className='mt-3'>Add Items</h3>
-                <div className='row mt-3'>
-                    <div className='col-sm'>
-                        <ItemSelected/>
-                    </div>
-                </div>
-            </div>
-        </AppProvider>
+        <Router>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/products" element={<ProductListing />} />
+                <Route path="/cart" element={<ShoppingCart />} />
+            </Routes>
+        </Router>
     );
 };
+
 export default App;

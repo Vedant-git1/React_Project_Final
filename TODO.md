@@ -1,6 +1,13 @@
-it out on - [x] Install dependencies for Shopping_App
-- [x] Start dev server for Shopping_App
-- [ ] Launch browser and verify Shopping_App
-- [ ] Close browser for Shopping_App
-- [x] Delete Budget_Allocation_Application
-o
+- [x] Install dependencies: react-router-dom, @reduxjs/toolkit, react-redux
+- [x] Set up Redux store and slices (cartSlice, locationSlice)
+- [x] Update data to houseplants (6 plants in 3+ categories)
+- [x] Create Header component (cart icon, nav)
+- [x] Create LandingPage component (background, paragraph, company name, Get Started button)
+- [x] Create ProductListing component (plants with thumbnails, names, prices, Add to Cart buttons)
+- [x] Create ShoppingCart component (items, increase/decrease, delete, totals, checkout/continue buttons)
+- [x] Update App.jsx for routing (BrowserRouter, Routes, Route)
+- [x] Add placeholder images in public/
+- [ ] Update existing components as needed (e.g., ExpenseItem for cart page)
+- [ ] Run dev server and test functionality
+- [ ] Initialize Git repo, create public GitHub repo, commit and push
+- [ ] Provide GitHub and live site URLs
